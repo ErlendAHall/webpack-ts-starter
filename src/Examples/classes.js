@@ -22,13 +22,3 @@ class Textfield extends Input {
 
 let textfield = new Textfield("Push", () => {}, 15);
 textfield.draw();
-
-textfield.height = 20;
-console.log(textfield.height);
-
-Input.prototype.draw = function () {
-  console.log("i have changed");
-};
-
-let textfield2 = new Textfield("Press", () => {}, 20);
-textfield2.draw();

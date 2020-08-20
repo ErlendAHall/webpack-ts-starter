@@ -1,8 +1,6 @@
 var input = {
-  init: function (text, width) {
-    this.text = text;
-    this.width = width;
-  },
+    text = text,
+    width = width,
 
   draw: function () {
     console.log("drawing input");
@@ -13,8 +11,8 @@ var input = {
   },
 };
 
-var Textfield = Object.setPrototypeOf(input);
+var textField = Object.create(input);
 
-Textfield.init("() => {}", 25);
+textField.draw();
 
-console.log(Textfield);
+console.log(textField.text);

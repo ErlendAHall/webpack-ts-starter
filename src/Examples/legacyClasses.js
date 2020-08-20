@@ -21,7 +21,7 @@ Textfield.prototype.draw = function () {
   console.log("polymorphism");
 };
 
-Input.prototype = Object.create(Textfield.prototype);
+Input.prototype = Textfield.prototype;
 
 var btn = new Textfield("hello", 15, "Press");
 
